@@ -1,4 +1,5 @@
 @echo off
+echo Running...
 set seqno=0
 :begin
 ping b-ww.mjv.jp -n 1 > nul || (echo Ping NG %date% %time% %seqno% & echo Ping NG %date% %time% %seqno% >> pingNG.txt)
