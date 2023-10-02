@@ -12,7 +12,14 @@
 
 运行方式：`python tenhou_echo.py`
 
-若要使用代理，需要在运行脚本前`export https_proxy="host:port"` host:port替换为代理服务器地址和端口
+若要使用代理，需要在运行脚本前设置终端使用的代理：
+
+- Linux 
+  `export https_proxy="<host>:<port>"`
+   `<host>`和`<port>`替换为代理服务器地址和端口
+- Windows
+  `set https_proxy=<host>:<port>` 
+  `<host>`和`<port>`替换为代理服务器地址和端口
 
 每秒向天凤服务器发送echo消息一次，会持续运行直到掉线
 
